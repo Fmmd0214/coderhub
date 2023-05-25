@@ -1,5 +1,5 @@
 const KoaRouter = require("@koa/router");
-// 进行数据库存储
+// 处理函数
 const userController = require("../controller/user.controller");
 // 验证逻辑
 const { verifyUser, handlePassword } = require("../middleware/user.middleware");
