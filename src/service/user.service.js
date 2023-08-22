@@ -18,6 +18,8 @@ class UserService {
         const [values] = await connection.execute(statement, [name]);
         return values;
     }
+
+    async findUserByPassword() {}
 }
 
 module.exports = new UserService();

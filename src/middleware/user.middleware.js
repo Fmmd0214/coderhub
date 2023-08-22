@@ -6,7 +6,7 @@ const {
 const { md5Password } = require("../utils/md5-password");
 
 const verifyUser = async (ctx, next) => {
-    const { name, password } = ctx.request.body;
+    const { name, password } = ctx.request.body; // 请求体中的数据
     // 2.1 判断用户名|密码是否为空
     if (!name || !password) {
         return ctx.app.emit("error", NAME_OR_PASSWORD_IS_REQUIRED, ctx);

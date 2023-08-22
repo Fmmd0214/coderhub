@@ -9,7 +9,7 @@ class UserController {
 
         // 2. 将user信息存储到数据库
         const result = await userService.create(user);
-        // 3.查看存储的结果， 告知前端
+        // 3.查看存储的结果，告知前端
         ctx.body = {
             message: "success",
             data: result,
