@@ -4,6 +4,6 @@ const { sign, test } = require("../controller/login.controller");
 
 const loginRouter = new KoaRouter({prefix: '/login'})
 
-loginRouter.post('/', verifyLogin, test, sign, )
+loginRouter.post('/', verifyLogin, sign)
 
 module.exports = loginRouter
